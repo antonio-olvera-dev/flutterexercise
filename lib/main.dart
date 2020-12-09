@@ -1,9 +1,14 @@
+import 'package:exercises/routes/Icons.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
     title: 'My exercises',
     home: MyExercise(),
+    initialRoute: '/',
+    routes: {
+      '/icons': (context) => ExerciseIcons(),
+    },
   ));
 }
 
@@ -51,9 +56,10 @@ class Body extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Botones(
-            'Boton 1',
+            'Icons',
             colorText: Colors.white,
             colorButton: Colors.cyan,
+            ruta: 'icons',
           ),
           Botones(
             'Boton 2',
@@ -105,7 +111,9 @@ class Botones extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10),
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/${this.ruta}');
+        },
         child: Text(
           this.texto,
           style: TextStyle(fontSize: 20, color: this.colorText),
