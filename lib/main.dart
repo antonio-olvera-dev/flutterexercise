@@ -1,4 +1,5 @@
 import 'package:exercises/routes/Icons.dart';
+import 'package:exercises/routes/listView.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,6 +9,8 @@ void main() {
     initialRoute: '/',
     routes: {
       '/icons': (context) => ExerciseIcons(),
+      '/listView': (context) => ListViewExample(),
+      '/listView2': (context) => ListViewExample(),
     },
   ));
 }
@@ -62,14 +65,16 @@ class Body extends StatelessWidget {
             ruta: 'icons',
           ),
           Botones(
-            'Boton 2',
+            'ListView Manual',
             colorText: Colors.white,
             colorButton: Colors.blue,
+            ruta: 'listView',
           ),
           Botones(
-            'Boton 3',
+            'ListView automático',
             colorText: Colors.white,
             colorButton: Colors.cyan,
+            ruta: 'listView2',
           ),
           Botones(
             'Boton 4',
