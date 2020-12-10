@@ -1,5 +1,6 @@
 import 'package:exercises/routes/Icons.dart';
 import 'package:exercises/routes/listView.dart';
+import 'package:exercises/routes/listView2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,7 @@ void main() {
     routes: {
       '/icons': (context) => ExerciseIcons(),
       '/listView': (context) => ListViewExample(),
-      '/listView2': (context) => ListViewExample(),
+      '/listView2': (context) => ListViewExample2(),
     },
   ));
 }
@@ -71,7 +72,7 @@ class Body extends StatelessWidget {
             ruta: 'listView',
           ),
           Botones(
-            'ListView automático',
+            'ListView "Tareas pesadas"',
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'listView2',
