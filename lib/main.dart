@@ -1,5 +1,6 @@
 import 'package:exercises/routes/Icons.dart';
 import 'package:exercises/routes/buttons.dart';
+import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ void main() {
       '/listView': (context) => ListViewExample(),
       '/listView2': (context) => ListViewExample2(),
       '/buttons': (context) => ButtonExample(),
+      '/images': (context) => Imagenes(),
     },
   ));
 }
@@ -86,9 +88,10 @@ class Body extends StatelessWidget {
             ruta: 'buttons',
           ),
           Botones(
-            'Boton 5',
+            'Imagenes',
             colorText: Colors.white,
             colorButton: Colors.cyan,
+            ruta: 'images',
           ),
           Botones(
             'Boton 6',
