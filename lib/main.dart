@@ -1,5 +1,6 @@
 import 'package:exercises/routes/Icons.dart';
 import 'package:exercises/routes/buttons.dart';
+import 'package:exercises/routes/datePiker.dart';
 import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
@@ -16,6 +17,7 @@ void main() {
       '/listView2': (context) => ListViewExample2(),
       '/buttons': (context) => ButtonExample(),
       '/images': (context) => Imagenes(),
+      '/datePicker': (context) => DatePikerExaple(),
     },
   ));
 }
@@ -60,8 +62,7 @@ class Body extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       color: Colors.white,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      child: ListView(
         children: [
           Botones(
             'Icons',
@@ -94,9 +95,10 @@ class Body extends StatelessWidget {
             ruta: 'images',
           ),
           Botones(
-            'Boton 6',
+            'DatePicker',
             colorText: Colors.white,
             colorButton: Colors.blue,
+            ruta: 'datePicker',
           ),
         ],
       ),

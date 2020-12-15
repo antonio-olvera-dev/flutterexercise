@@ -48,6 +48,7 @@ flutter:
   assets:
   - assets/meme.jpg
   - assets/green.png
+  - assets/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

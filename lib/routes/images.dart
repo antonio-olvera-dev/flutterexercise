@@ -38,6 +38,28 @@ class Imagenes extends StatelessWidget {
               Image(
                 image: AssetImage('assets/green.png'),
               ),
+              Container(
+                margin: EdgeInsets.all(20),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20.0),
+                  child: Image(
+                    image: AssetImage('assets/img1.jpg'),
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(50),
+                child: Container(
+                  margin: EdgeInsets.all(20),
+                  child: ClipOval(
+                    clipBehavior: Clip.antiAlias,
+                    child: Image(
+                      image: AssetImage('assets/meme.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
