@@ -5,6 +5,7 @@ import 'package:exercises/routes/datePiker.dart';
 import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
+import 'package:exercises/routes/sliverAppBar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,6 +21,7 @@ void main() {
       '/images': (context) => Imagenes(),
       '/datePicker': (context) => DatePikerExaple(),
       '/alert': (context) => AlertExample(),
+      '/sliverAppBar': (context) => SliverExample(),
     },
   ));
 }
@@ -107,6 +109,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'alert',
+          ),
+          Botones(
+            'SliverAppBar',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'sliverAppBar',
           ),
         ],
       ),
