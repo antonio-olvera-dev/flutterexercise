@@ -2,6 +2,7 @@ import 'package:exercises/routes/Icons.dart';
 import 'package:exercises/routes/alert.dart';
 import 'package:exercises/routes/buttons.dart';
 import 'package:exercises/routes/datePiker.dart';
+import 'package:exercises/routes/gridView.dart';
 import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
@@ -22,6 +23,7 @@ void main() {
       '/datePicker': (context) => DatePikerExaple(),
       '/alert': (context) => AlertExample(),
       '/sliverAppBar': (context) => SliverExample(),
+      '/gridView': (context) => GridViewExample(),
     },
   ));
 }
@@ -115,6 +117,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.blue,
             ruta: 'sliverAppBar',
+          ),
+          Botones(
+            'GridView',
+            colorText: Colors.white,
+            colorButton: Colors.cyan,
+            ruta: 'gridView',
           ),
         ],
       ),
