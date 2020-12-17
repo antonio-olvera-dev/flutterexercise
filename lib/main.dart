@@ -31,11 +31,14 @@ void main() {
 }
 
 class MyExercise extends StatelessWidget {
+  const MyExercise();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: header(),
       body: Body(),
+      drawer: DrawerExample(),
     );
   }
 
@@ -44,10 +47,14 @@ class MyExercise extends StatelessWidget {
       title: Text(
         'My exercises',
       ),
-      leading: IconButton(
-        icon: Icon(Icons.menu),
-        color: Colors.white,
-        onPressed: () {},
+      leading: Builder(
+        builder: (ctx) => IconButton(
+          icon: Icon(Icons.menu),
+          color: Colors.white,
+          onPressed: () {
+            Scaffold.of(ctx).openDrawer();
+          },
+        ),
       ),
       actions: <Widget>[
         IconButton(
@@ -56,6 +63,46 @@ class MyExercise extends StatelessWidget {
           onPressed: () {},
         ),
       ],
+    );
+  }
+}
+
+class DrawerExample extends StatelessWidget {
+  const DrawerExample({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+            child: Text(
+              'Drawer Header',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              ),
+            ),
+          ),
+          ListTile(
+            title: Text('Silver App'),
+            onTap: () {
+              Navigator.pushNamed(context, '/sliverAppBar');
+            },
+          ),
+          ListTile(
+            title: Text('Grid View'),
+            onTap: () {
+              Navigator.pushNamed(context, '/gridView');
+            },
+          )
+        ],
+      ),
     );
   }
 }
