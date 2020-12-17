@@ -7,6 +7,7 @@ import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
 import 'package:exercises/routes/sliverAppBar.dart';
+import 'package:exercises/routes/tabBar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,6 +25,7 @@ void main() {
       '/alert': (context) => AlertExample(),
       '/sliverAppBar': (context) => SliverExample(),
       '/gridView': (context) => GridViewExample(),
+      '/tabBar': (context) => TabBarExample(),
     },
   ));
 }
@@ -123,6 +125,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'gridView',
+          ),
+          Botones(
+            'Tab Bar',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'tabBar',
           ),
         ],
       ),
