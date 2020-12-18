@@ -1,5 +1,6 @@
 import 'package:exercises/routes/Icons.dart';
 import 'package:exercises/routes/alert.dart';
+import 'package:exercises/routes/bottomNavigationBar.dart';
 import 'package:exercises/routes/buttons.dart';
 import 'package:exercises/routes/datePiker.dart';
 import 'package:exercises/routes/gridView.dart';
@@ -26,6 +27,7 @@ void main() {
       '/sliverAppBar': (context) => SliverExample(),
       '/gridView': (context) => GridViewExample(),
       '/tabBar': (context) => TabBarExample(),
+      '/bottomNavigationBarExample': (context) => BottomNavigationBarExample(),
     },
   ));
 }
@@ -178,6 +180,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.blue,
             ruta: 'tabBar',
+          ),
+          Botones(
+            'BottomNavigationBarExample',
+            colorText: Colors.white,
+            colorButton: Colors.cyan,
+            ruta: 'bottomNavigationBarExample',
           ),
         ],
       ),
