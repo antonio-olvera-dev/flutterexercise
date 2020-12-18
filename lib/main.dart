@@ -7,6 +7,7 @@ import 'package:exercises/routes/gridView.dart';
 import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
+import 'package:exercises/routes/slider.dart';
 import 'package:exercises/routes/sliverAppBar.dart';
 import 'package:exercises/routes/tabBar.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,7 @@ void main() {
       '/gridView': (context) => GridViewExample(),
       '/tabBar': (context) => TabBarExample(),
       '/bottomNavigationBarExample': (context) => BottomNavigationBarExample(),
+      '/slider': (context) => SliderExample(),
     },
   ));
 }
@@ -182,10 +184,16 @@ class Body extends StatelessWidget {
             ruta: 'tabBar',
           ),
           Botones(
-            'BottomNavigationBarExample',
+            'BottomNavigationBar',
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'bottomNavigationBarExample',
+          ),
+          Botones(
+            'Slider',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'slider',
           ),
         ],
       ),
