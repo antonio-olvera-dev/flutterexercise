@@ -10,6 +10,7 @@ import 'package:exercises/routes/listView2.dart';
 import 'package:exercises/routes/slider.dart';
 import 'package:exercises/routes/sliverAppBar.dart';
 import 'package:exercises/routes/tabBar.dart';
+import 'package:exercises/routes/textField.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,6 +31,7 @@ void main() {
       '/tabBar': (context) => TabBarExample(),
       '/bottomNavigationBarExample': (context) => BottomNavigationBarExample(),
       '/slider': (context) => SliderExample(),
+      '/textField': (context) => TextFieldExample(),
     },
   ));
 }
@@ -194,6 +196,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.blue,
             ruta: 'slider',
+          ),
+          Botones(
+            'TextField',
+            colorText: Colors.white,
+            colorButton: Colors.cyan,
+            ruta: 'textField',
           ),
         ],
       ),
