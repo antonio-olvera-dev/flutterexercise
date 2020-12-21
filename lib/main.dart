@@ -1,5 +1,6 @@
 import 'package:exercises/routes/Icons.dart';
 import 'package:exercises/routes/alert.dart';
+import 'package:exercises/routes/animation.dart';
 import 'package:exercises/routes/bottomNavigationBar.dart';
 import 'package:exercises/routes/buttons.dart';
 import 'package:exercises/routes/datePiker.dart';
@@ -32,6 +33,7 @@ void main() {
       '/bottomNavigationBarExample': (context) => BottomNavigationBarExample(),
       '/slider': (context) => SliderExample(),
       '/textField': (context) => TextFieldExample(),
+      '/animation': (context) => AnimationExample(),
     },
   ));
 }
@@ -202,6 +204,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'textField',
+          ),
+          Botones(
+            'Animation',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'animation',
           ),
         ],
       ),
