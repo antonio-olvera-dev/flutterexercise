@@ -13,6 +13,7 @@ import 'package:exercises/routes/slider.dart';
 import 'package:exercises/routes/sliverAppBar.dart';
 import 'package:exercises/routes/tabBar.dart';
 import 'package:exercises/routes/textField.dart';
+import 'package:exercises/routes/tweenAnimationBuilder.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,6 +37,7 @@ void main() {
       '/textField': (context) => TextFieldExample(),
       '/animation': (context) => AnimationExample(),
       '/animatedcontainer': (context) => AnimatedContainerExample(),
+      '/tweenAnimationBuilder': (context) => TweenAnimationBuilderExample(),
     },
   ));
 }
@@ -219,6 +221,13 @@ class Body extends StatelessWidget {
             colorButton: Colors.cyan,
             ruta: 'animatedcontainer',
           ),
+          Botones(
+            'TweenAnimationBuilder',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'tweenAnimationBuilder',
+          ),
+    
         ],
       ),
     );
