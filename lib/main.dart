@@ -6,6 +6,7 @@ import 'package:exercises/routes/bottomNavigationBar.dart';
 import 'package:exercises/routes/buttons.dart';
 import 'package:exercises/routes/datePiker.dart';
 import 'package:exercises/routes/gridView.dart';
+import 'package:exercises/routes/heroAnimation.dart';
 import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
@@ -38,6 +39,7 @@ void main() {
       '/animation': (context) => AnimationExample(),
       '/animatedcontainer': (context) => AnimatedContainerExample(),
       '/tweenAnimationBuilder': (context) => TweenAnimationBuilderExample(),
+      '/heroAnimation': (context) => HeroAnimationExample(),
     },
   ));
 }
@@ -227,7 +229,12 @@ class Body extends StatelessWidget {
             colorButton: Colors.blue,
             ruta: 'tweenAnimationBuilder',
           ),
-    
+          Botones(
+            'Hero Animation',
+            colorText: Colors.white,
+            colorButton: Colors.cyan,
+            ruta: 'heroAnimation',
+          ),
         ],
       ),
     );
