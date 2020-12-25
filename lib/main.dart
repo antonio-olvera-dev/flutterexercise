@@ -10,6 +10,7 @@ import 'package:exercises/routes/heroAnimation.dart';
 import 'package:exercises/routes/images.dart';
 import 'package:exercises/routes/listView.dart';
 import 'package:exercises/routes/listView2.dart';
+import 'package:exercises/routes/radialHero.dart';
 import 'package:exercises/routes/slider.dart';
 import 'package:exercises/routes/sliverAppBar.dart';
 import 'package:exercises/routes/tabBar.dart';
@@ -39,7 +40,7 @@ void main() {
       '/animation': (context) => AnimationExample(),
       '/animatedcontainer': (context) => AnimatedContainerExample(),
       '/tweenAnimationBuilder': (context) => TweenAnimationBuilderExample(),
-      '/heroAnimation': (context) => HeroAnimationExample(),
+      '/radialhero': (context) => RadialHeroExample(),
     },
   ));
 }
@@ -234,6 +235,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'heroAnimation',
+          ),
+        Botones(
+            'Radial hero',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'radialhero',
           ),
         ],
       ),
