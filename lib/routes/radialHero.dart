@@ -12,6 +12,22 @@ class RadialHeroExample extends StatelessWidget {
     return MaterialRectCenterArcTween(begin: begin, end: end);
   }
 
+  
+  @override
+  Widget build(BuildContext context) {
+    timeDilation = 5.0;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Radial Transition Demo'),
+      ),
+      body: Container(
+        child:
+            Center(child: _buildHero(context, 'assets/img1.jpg', 'Trafalgar')),
+      ),
+    );
+  }
+
   static Widget _buildPage(
       BuildContext context, String imageName, String description) {
     return Container(
@@ -74,20 +90,6 @@ class RadialHeroExample extends StatelessWidget {
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    timeDilation = 5.0;
-
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Radial Transition Demo'),
-      ),
-      body: Container(
-        child:
-            Center(child: _buildHero(context, 'assets/img1.jpg', 'Trafalgar')),
-      ),
-    );
-  }
 }
 
 class Photo extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:exercises/routes/Icons.dart';
+import 'package:exercises/routes/StaggeredExample.dart';
 import 'package:exercises/routes/alert.dart';
 import 'package:exercises/routes/animation.dart';
 import 'package:exercises/routes/animationContainer.dart';
@@ -41,6 +42,7 @@ void main() {
       '/animatedcontainer': (context) => AnimatedContainerExample(),
       '/tweenAnimationBuilder': (context) => TweenAnimationBuilderExample(),
       '/radialhero': (context) => RadialHeroExample(),
+      '/animatedSwitcher': (context) => AnimatedSwitcherExample(),
     },
   ));
 }
@@ -236,11 +238,17 @@ class Body extends StatelessWidget {
             colorButton: Colors.cyan,
             ruta: 'heroAnimation',
           ),
-        Botones(
+          Botones(
             'Radial hero',
             colorText: Colors.white,
             colorButton: Colors.blue,
             ruta: 'radialhero',
+          ),
+          Botones(
+            'AnimatedSwitcher',
+            colorText: Colors.white,
+            colorButton: Colors.cyan,
+            ruta: 'animatedSwitcher',
           ),
         ],
       ),
