@@ -6,6 +6,7 @@ import 'package:exercises/routes/animationContainer.dart';
 import 'package:exercises/routes/bottomNavigationBar.dart';
 import 'package:exercises/routes/buttons.dart';
 import 'package:exercises/routes/datePiker.dart';
+import 'package:exercises/routes/graphQL.dart';
 import 'package:exercises/routes/gridView.dart';
 import 'package:exercises/routes/heroAnimation.dart';
 import 'package:exercises/routes/images.dart';
@@ -43,6 +44,7 @@ void main() {
       '/tweenAnimationBuilder': (context) => TweenAnimationBuilderExample(),
       '/radialhero': (context) => RadialHeroExample(),
       '/animatedSwitcher': (context) => AnimatedSwitcherExample(),
+      '/graphql': (context) => GraphQL(),
     },
   ));
 }
@@ -249,6 +251,12 @@ class Body extends StatelessWidget {
             colorText: Colors.white,
             colorButton: Colors.cyan,
             ruta: 'animatedSwitcher',
+          ),
+         Botones(
+            'GraphQL',
+            colorText: Colors.white,
+            colorButton: Colors.blue,
+            ruta: 'graphql',
           ),
         ],
       ),
